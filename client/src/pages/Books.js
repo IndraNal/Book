@@ -7,12 +7,15 @@ import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
 
+// https://www.googleapis.com/books/v1/volumes?q=intitle:Fifty Shades of Grey as Told by Christian&key=AIzaSyCYi9Q_0CykKRsuIq6kQqrDmGM4XxRDQL8
+
 class Books extends Component {
   state = {
     books: [],
     title: "",
-    author: "",
-    synopsis: ""
+    description: "",
+    image: "",
+    link: "",
   };
 
   componentDidMount() {
